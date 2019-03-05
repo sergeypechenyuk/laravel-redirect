@@ -15,20 +15,16 @@ class CreateCommand extends Command
      * @var string
      */
     protected $signature = 'redirect:create 
-                            {source : source url}
-                            {destination : destination url}
-                            {code? : server redirect code}
-                            {expired? : redirect expired time}';
+                            {source : source url (required)}
+                            {destination : destination url (required)}
+                            {code? : server redirect code (optional)}
+                            {expired? : redirect expired time, format: Y-m-d H:i:s (optional)}';
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create redirect
-        source (required): source url
-        destination (required): destination url 
-        code (optional): server redirect code
-        expired (optional): redirect expired time, format: Y-m-d H:i:s';
+    protected $description = 'Create redirect';
 
     /**
      * Allow redirect server codes

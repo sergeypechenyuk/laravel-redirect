@@ -15,20 +15,16 @@ class UpdateCommand extends Command
      * @var string
      */
     protected $signature = 'redirect:update 
-                            {source : source url}
-                            {destination : destination url}
-                            {code? : server redirect code}
-                            {expired? : redirect expired time}';
+                            {source : source url (required)}
+                            {destination : destination url (required)}
+                            {code? : server redirect code (optional)}
+                            {expired? : redirect expired time, format: Y-m-d H:i:s (optional)}';
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Update redirect
-        source (required): source urld
-        destination (required): destination url 
-        code (optional): server redirect code
-        expired (optional): redirect expired time, format: Y-m-d H:i:s';
+    protected $description = 'Update redirect';
 
     /**
      * Allow redirect server codes

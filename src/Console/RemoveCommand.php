@@ -15,14 +15,13 @@ class RemoveCommand extends Command
      * @var string
      */
     protected $signature = 'redirect:remove 
-                            {source : source url}';
+                            {source : source url (required)}';
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create redirect
-        source (required): source url';
+    protected $description = 'Remove redirect';
 
     /**
      * Create a new command instance.

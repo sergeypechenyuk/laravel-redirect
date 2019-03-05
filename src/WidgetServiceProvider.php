@@ -22,6 +22,7 @@ class WidgetServiceProvider extends ServiceProvider
                 Console\CreateCommand::class,
                 Console\UpdateCommand::class,
                 Console\RemoveCommand::class,
+                Console\ListCommand::class,
             ]);
         }
     }
